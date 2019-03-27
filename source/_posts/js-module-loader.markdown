@@ -21,7 +21,6 @@ tags:
 
 于是，JavaScript 的模块化成为迫切需求。在 ES6 Module 来临之前，JavaScript 社区提供了强大支持，尝试在现有的运行环境下，实现模块的效果。
 
-
 ---
 
 ## Catalog

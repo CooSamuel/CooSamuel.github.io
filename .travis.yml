@@ -1,0 +1,29 @@
+language: node_js
+
+node_js: stable
+
+install:
+  - npm install
+
+script:
+  - hexo clean
+  - hexo g
+
+after_script:
+  
+  - cd ./public
+  - touch CNAME
+  - echo "cosamuel.tech" >> CNAME
+
+  - git init
+  - git add .
+  - git commit -m "Site Update:`date +' %Y-%m-%d %H:%m:%S'`"
+  - git push --force --quiet "https://${token}@github.com/CooSamuel/CooSamuel.github.io.git" master:master
+
+branches:
+  only:
+    - src
+
+cache:
+  directories:
+    - node_modules
