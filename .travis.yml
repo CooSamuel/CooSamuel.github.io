@@ -26,8 +26,10 @@ after_script:
   - git push --force --quiet "https://$GITHUB_TOKEN@github.com/CooSamuel/CooSamuel.github.io.git" master:master
 
 deploy:
-  provider: npm
+  provider: releases
   github-token: $GITHUB_TOKEN
+  file: "FILE TO UPLOAD"
+  draft: true
   skip_cleanup: true
   on:
     branch: master
