@@ -14,8 +14,6 @@ script:
   - hexo clean
   - hexo g
 
-after_script:
-  
   - cd ./public
   - touch CNAME
   - echo "cosamuel.tech" >> CNAME
