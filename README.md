@@ -28,7 +28,7 @@ Especially the section:
 ```
 deploy:
   type: git
-  repo: https://github.com/Kaijun/hexo-theme-huxblog
+  repo: https://github.com/CooSamuel/hexo-theme-huxblog
   branch: gh-pages
 ```
 Replace with your own repo!
