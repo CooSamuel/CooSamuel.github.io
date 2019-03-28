@@ -28,5 +28,6 @@ after_script:
 deploy:
   provider: npm
   github-token: $GITHUB_TOKEN
+  skip_cleanup: true
   on:
     branch: master
