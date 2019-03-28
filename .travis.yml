@@ -8,6 +8,7 @@ cache:
 
 install:
   - npm install
+  - npm i -g hexo
 
 script:
   - hexo clean
