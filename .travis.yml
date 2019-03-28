@@ -26,6 +26,7 @@ after_script:
   - git push --force --quiet "https://$GITHUB_TOKEN@github.com/CooSamuel/CooSamuel.github.io.git" master:master
 
 deploy:
+  provider: npm
   github-token: $GITHUB_TOKEN
   on:
     branch: master
