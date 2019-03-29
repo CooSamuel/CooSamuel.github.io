@@ -14,17 +14,6 @@ script:
   - hexo clean
   - hexo g
 
-  # - cd ./public
-  # - touch CNAME
-  # - echo "cosamuel.tech" >> CNAME
-  # - cd ..
-  # - hexo d
-
-  # - git init
-  # - git add .
-  # - git commit -m "Site Update:`date +' %Y-%m-%d %H:%m:%S'`"
-  # - git push --force --quiet "https://$GITHUB_TOKEN@github.com/CooSamuel/CooSamuel.github.io.git" master:master
-
 deploy:
   provider: pages
   github-token: $GITHUB_TOKEN
