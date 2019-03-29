@@ -7,9 +7,8 @@ cache: npm
 install:
   - npm install
 
-script:
+before_deploy:
   - hexo g
-
 
 deploy:
   provider: pages
