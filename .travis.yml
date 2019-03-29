@@ -28,10 +28,7 @@ script:
 deploy:
   provider: pages
   github-token: $GITHUB_TOKEN
-  local_dir: ./public
-  target_branch: master
+  local_dir: public
   skip_cleanup: true
-  keep_history: true
-  repo: CoSamuel.github.io
   on:
-    branch: master
+    branch: gh-pages
