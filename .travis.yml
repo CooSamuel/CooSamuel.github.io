@@ -2,16 +2,12 @@ language: node_js
 
 node_js: stable
 
-cache:
-  directories:
-    - node_modules
+cache: npm
 
 install:
   - npm install
-  - npm i -g hexo
 
 script:
-  - hexo clean
   - hexo g
 
 
