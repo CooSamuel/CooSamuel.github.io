@@ -20,4 +20,4 @@ deploy:
   local_dir: public
   skip_cleanup: true
   on:
-    branch: gh-pages
+    branch: master
