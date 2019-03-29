@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content>
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+          TOEFL 写作笔记 - CoSamuel 的博客 | CoSam&#39;s Blog
+        
+    </title>
+
+    <link rel="canonical" href="https://cosamuel.tech/2018/11/25/toefl-writting/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">芊杉</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://cosamuel.tech/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('post-bg-zhengzha.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#-学习笔记 -TOEFL" title="-学习笔记 -TOEFL">-学习笔记 -TOEFL</a>
+                        
+                    </div>
+                    <h1>TOEFL 写作笔记</h1>
+                    <h2 class="subheading">破晓前的黑暗</h2>
+                    <span class="meta">
+                        Posted by Cosam on
+                        2018-11-25
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h1 id="TOEFL-写作笔记"><a href="#TOEFL-写作笔记" class="headerlink" title="TOEFL 写作笔记"></a>TOEFL 写作笔记</h1><h2 id="独立写作"><a href="#独立写作" class="headerlink" title="独立写作"></a>独立写作</h2><h3 id="1-对比类（A-gt-B）-gt-平衡结构"><a href="#1-对比类（A-gt-B）-gt-平衡结构" class="headerlink" title="1.对比类（A&gt;B）-&gt; 平衡结构"></a>1.对比类（A&gt;B）-&gt; 平衡结构</h3><blockquote>
+<p>Universities should spend <strong>more</strong> money on improving facility like libraries and computer lab than hiring famous teachers?</p>
+<p>…</p>
+</blockquote>
+<h4 id="文章结构"><a href="#文章结构" class="headerlink" title="文章结构"></a>文章结构</h4><table>
+<thead>
+<tr>
+<th>段落</th>
+<th>写法</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>开头段</td>
+<td>表明观点（不同意，A=B）：背景描述，话题引入，表明观点。</td>
+<td></td>
+</tr>
+<tr>
+<td>第二段</td>
+<td>支持A观点：主题，解释，举例，总结。</td>
+<td></td>
+</tr>
+<tr>
+<td>第三段</td>
+<td>支持B观点：主题，解释，举例，总结。</td>
+<td></td>
+</tr>
+<tr>
+<td>结尾段</td>
+<td>重申观点，总结分论点</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-单一观点类（A）-gt-让步结构"><a href="#2-单一观点类（A）-gt-让步结构" class="headerlink" title="2.单一观点类（A）-&gt; 让步结构"></a>2.单一观点类（A）-&gt; 让步结构</h3><blockquote>
+<p>People should open to new ideals and change their minds to be successful.</p>
+<p>…</p>
+</blockquote>
+<h4 id="文章结构-1"><a href="#文章结构-1" class="headerlink" title="文章结构"></a>文章结构</h4><table>
+<thead>
+<tr>
+<th>段落</th>
+<th>写法</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>开头段</td>
+<td>表明观点（同意、不同意）：背景描述，话题引入，表明观点。</td>
+<td></td>
+</tr>
+<tr>
+<td>第二段</td>
+<td>让步段（诚然，会有人不同意、同意）：主题，解释，举例，总结。</td>
+<td>Admittedly, some people may concern that…</td>
+</tr>
+<tr>
+<td>第三段</td>
+<td>转折，支持自己观点，理由1：</td>
+<td>However, in spite of …</td>
+</tr>
+<tr>
+<td>第四段</td>
+<td>递进，支持自己观点，理由2：</td>
+<td>Moreover,</td>
+</tr>
+<tr>
+<td>总结</td>
+<td>重申观点，总结分论点</td>
+<td>To sum up,</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-绝对化类（A-）-gt-让步反例结构"><a href="#3-绝对化类（A-）-gt-让步反例结构" class="headerlink" title="3.绝对化类（A+）-&gt; 让步反例结构"></a>3.绝对化类（A+）-&gt; 让步反例结构</h3><blockquote>
+<p>Always telling the truth is the most important consideration in any relationship between people.</p>
+<p>…</p>
+</blockquote>
+<h4 id="文章结构-2"><a href="#文章结构-2" class="headerlink" title="文章结构"></a>文章结构</h4><table>
+<thead>
+<tr>
+<th>段落</th>
+<th>写法</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>开头段</td>
+<td>表明观点（不同意）：背景描述，话题引入，表明观点（太绝对，还有很多其他的因素）。</td>
+<td></td>
+</tr>
+<tr>
+<td>第二段</td>
+<td>让步段（诚然，会有合理性）：主题，解释，举例，总结。</td>
+<td>Admittedly, some people may concern that…</td>
+</tr>
+<tr>
+<td>第三段</td>
+<td>转折，举出反例（同意好、更好）：</td>
+<td>However, in spite of …</td>
+</tr>
+<tr>
+<td>第四段</td>
+<td>递进，举出反例（同意好、更好）：</td>
+<td>Moreover, / In addition,</td>
+</tr>
+<tr>
+<td>总结</td>
+<td>重申观点，总结分论点</td>
+<td>To sum up,</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-三选一类（ABC）-gt-ABC结构"><a href="#4-三选一类（ABC）-gt-ABC结构" class="headerlink" title="4.三选一类（ABC）-&gt; ABC结构"></a>4.三选一类（ABC）-&gt; ABC结构</h3><blockquote>
+<p>Which of the following reason is most important in helping students to study in colleges and universities?</p>
+<p>A.</p>
+<p>B.</p>
+<p>C.</p>
+<p>…</p>
+</blockquote>
+<h4 id="文章结构-3"><a href="#文章结构-3" class="headerlink" title="文章结构"></a>文章结构</h4><table>
+<thead>
+<tr>
+<th>段落</th>
+<th>写法</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>开头段</td>
+<td>表明观点（A\</td>
+<td>B\</td>
+<td>C）：背景描述，话题引入，表明观点（太绝对，还有很多其他的因素）。</td>
+<td>It would be the best ideas to pick A…</td>
+</tr>
+<tr>
+<td>第二段</td>
+<td>讨论为什么不选择（B\</td>
+<td>C\</td>
+<td>A）：主题，解释，举例，总结。</td>
+<td>B is …</td>
+</tr>
+<tr>
+<td>第三段</td>
+<td>讨论为什么不选择（C\</td>
+<td>A\</td>
+<td>B）：主题，解释，举例，总结。</td>
+<td>C is …</td>
+</tr>
+<tr>
+<td>总结</td>
+<td>重申观点，总结分论点</td>
+<td>Thus, …</td>
+</tr>
+</tbody>
+</table>
+<h2 id="综合写作-（文章结构）"><a href="#综合写作-（文章结构）" class="headerlink" title="综合写作 （文章结构）"></a>综合写作 （文章结构）</h2><h3 id="首段："><a href="#首段：" class="headerlink" title="首段："></a>首段：</h3><p><u>In the lecture, the professor casts doubt on the reading passage’s idea that</u> … . <u>The professor asserts that</u> …</p>
+<h3 id="对比部分："><a href="#对比部分：" class="headerlink" title="对比部分："></a>对比部分：</h3><p><u>Firstly, contrary to the belief in the passage that</u> …(argument in the passage), <u>the professor asserts that</u> …</p>
+<p><u>Secondly, the author of the passage points out that</u> … (argument in the passage), <u>while the lecture notes that</u> …</p>
+<p><u>Lastly, oposing the author’s belief that</u> …(argument in the passage), <u>the professor contends that</u> … </p>
+<h2 id="段落写法"><a href="#段落写法" class="headerlink" title="段落写法"></a>段落写法</h2><h3 id="开头段"><a href="#开头段" class="headerlink" title="开头段"></a>开头段</h3><p><strong>三要素写法</strong></p>
+<ol>
+<li><p>背景介绍（放大话题由远及近）</p>
+<p>联想。egs:</p>
+<ul>
+<li>Watching movies could be an effective way to escape from daily burdens temporarily and enjoy a moment of leisure and fun.</li>
+<li>When asked about the sources of happiness, different people may express different opinions. Understandably, a person’s attitude is closely related to his values and views of the world.</li>
+</ul>
+</li>
+<li><p>话题引入（引入不同意的观点）</p>
+<ul>
+<li>Some viewers prefer to …</li>
+<li>Those who attach great importance to … believe that …</li>
+</ul>
+</li>
+<li><p>表明观点（通过转折陈述观点）</p>
+<ul>
+<li>However, as far as I am concerned, it could be more advantageous to …</li>
+<li>However, I am in favor of the opinion that …</li>
+</ul>
+</li>
+</ol>
+<p><strong>固定句型</strong></p>
+<p>The issue of <strong> is an emotional one, with many people taking the attitude that </strong> . However, from my own perspective, __ .</p>
+<h3 id="结尾段"><a href="#结尾段" class="headerlink" title="结尾段"></a>结尾段</h3><p><strong>尾段2要素</strong></p>
+<ol>
+<li>重申观点<ul>
+<li>To conclude, / To sum up, / All in all, / As a result,</li>
+</ul>
+</li>
+<li>总结分论点</li>
+</ol>
+<h2 id="词汇"><a href="#词汇" class="headerlink" title="词汇"></a>词汇</h2><h3 id="对比："><a href="#对比：" class="headerlink" title="对比："></a>对比：</h3><p>contrary to; in opposition to; in sharp contrast to</p>
+<h3 id="认为："><a href="#认为：" class="headerlink" title="认为："></a>认为：</h3><p>assert; claim; contend; maintain; state; argue; note</p>
+
+
+                <hr>
+
+                
+
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2019/01/20/20190120GeekPark/" data-toggle="tooltip" data-placement="top" title="GeekPark if 2019">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2018/10/09/2018-10-09-zhengzha/" data-toggle="tooltip" data-placement="top" title="挣扎">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                
+
+                
+
+            </div>
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#-学习笔记 -TOEFL" title="-学习笔记 -TOEFL">-学习笔记 -TOEFL</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://blog.kaijun.rocks" target="_blank">Kaijun&#39;s Blog</a></li>
+                    
+                        <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
+                    
+                        <li><a href="#" target="_blank">Foo</a></li>
+                    
+                        <li><a href="#" target="_blank">Bar</a></li>
+                    
+                        <li><a href="#" target="_blank">Example Friends</a></li>
+                    
+                        <li><a href="#" target="_blank">It helps SEO</a></li>
+                    
+                </ul>
+                
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/Chen_Samiue">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/madsam">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/cosamuel">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://github.com/CooSamuel">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 芊杉 2019
+                    | 蜀ICP备17028198号
+                    <br>
+                    <span style="display: inline-block; margin: 0 5px;">
+                    <!--    <i class="fa fa-heart"></i> -->
+                        <i class="fa fa-space-shuttle"></i>
+                    </span>
+                    Theme by <a href="http://huangxuan.me">Hux</a>
+
+
+                    </p>
+                    <!-- |
+                    Ported by <a href="http://blog.kaijun.rocks">Kaijun</a>
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=kaijun&repo=hexo-theme-huxblog&type=star&count=true" >
+                    </iframe>
+                 -->
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://cosamuel.tech/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="https://cosamuel.tech/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
