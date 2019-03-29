@@ -13,6 +13,9 @@ install:
 script:
   - hexo clean
   - hexo g
+  - touch public/CNAME
+  - echo "cosamuel.tech" >> public/CNAME
+
 
 deploy:
   provider: pages
