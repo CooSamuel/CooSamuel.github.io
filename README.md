@@ -1,22 +1,19 @@
-# Hexo-Theme-Huxblog
+# Hexo-Theme with Huxblog and Travis CI [![Build Status](https://travis-ci.org/CooSamuel/CooSamuel.github.io.svg?branch=develop)](https://travis-ci.org/CooSamuel/CooSamuel.github.io)
 
-[![Build Status](https://travis-ci.org/CooSamuel/CooSamuel.github.io.svg?branch=master)](https://travis-ci.org/CooSamuel/CooSamuel.github.io)
-> Ported Theme of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), Thank [Huxpro](https://github.com/Huxpro) for designing such a flawless theme.
-
-### [Demo &rarr;](http://kaijun.github.io/hexo-theme-huxblog)
+> Ported Theme of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), Thank [Huxpro](https://github.com/Huxpro) for designing such a flawless theme. [Demo &larr;](http://kaijun.github.io/hexo-theme-huxblog)
 
 
 ## Usage
 
-I didn't publish it as a single theme folder because a few of the pages are added and modified manually, so you should manually create some extra folders in `source` for the new pages and modify the `_config.yml` if you only have the single theme folder.
+You can just simply clone this repo and edit the `_config.yml` and `.trvis.yml` to customize your site.
 
 So i just pushed the whole hexo project for your convenience, all pre settings and boilerplates are included, have a look and go ahead customizing your own blog!
 
 ##### 1.Init
 
 ```
-git clone https://github.com/Kaijun/hexo-theme-huxblog.git
-cd hexo-theme-huxblog
+git clone https://github.com/CooSamuel/CooSamuel.github.io.git
+cd CooSamuel.github.io
 npm install
 ```
 
@@ -24,12 +21,6 @@ npm install
 Modify `_config.yml` file with your own info.
 Especially the section:
 
-```
-deploy:
-  type: git
-  repo: https://github.com/CooSamuel/hexo-theme-huxblog
-  branch: gh-pages
-```
 Replace with your own repo!
 
 ##### 3.Writting/Serve/Deploy
