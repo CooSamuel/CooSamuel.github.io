@@ -12,6 +12,7 @@ before_deploy:
 
 deploy:
   provider: pages
+  target_branch: master
   github-token: $GITHUB_TOKEN
   local_dir: public
   skip_cleanup: true
