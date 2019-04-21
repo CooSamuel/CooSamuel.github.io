@@ -8,6 +8,7 @@ install:
   - npm install
 
 before_deploy:
+  - hexo c
   - hexo g
 
 deploy:
