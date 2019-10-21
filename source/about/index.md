@@ -1,9 +1,9 @@
 ---
 layout: "about"
 title: "About"
-date: 2016-04-21 04:48:33
-description: "Hey, this is Kaijun."
-header-img: "img/about-bg.jpg"
+date: 2018-08-22 04:48:33
+description: "Hey, this is Qiashan."
+header-img: "https://tva1.sinaimg.cn/large/006y8mN6gy1g85wyer0h5j31nt0u014r.jpg"
 comments: true
 ---
 
