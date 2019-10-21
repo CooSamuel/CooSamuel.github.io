@@ -6,7 +6,7 @@
 title: 芊杉
 subtitle: Being A Leaner!
 author: CoSam
-language: zh-TW
+language: zh-CN
 timezone:
 
 # URL
@@ -20,7 +20,8 @@ permalink_defaults:
 
 # Site settings
 SEOTitle: CoSamuel 的博客 | CoSam's Blog
-header-img: img/home-bg.jpg
+# header-img: img/home-bg.jpg
+header-img: https://tva1.sinaimg.cn/large/006y8mN6gy1g85ulng3ekj31900u01kx.jpg
 email: qianshan.chen15@gmail.com
 description: ""
 keyword: ""
@@ -59,8 +60,8 @@ duoshuo_share: false                     # set to false if you want to use Comme
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "是我，嘘!"
-sidebar-avatar: img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
+# sidebar-avatar: img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: https://tva1.sinaimg.cn/large/006y8mN6gy1g85ungehtlj30u011twme.jpg
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
