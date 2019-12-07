@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content>
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+          我也吃上黑苹果了！ - CoSamuel 的博客 | CoSam&#39;s Blog
+        
+    </title>
+
+    <link rel="canonical" href="https://cosamuel.tech/2019/10/21/20191021Hackintosh/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">芊杉</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://cosamuel.tech/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('https://tva1.sinaimg.cn/large/006y8mN6gy1g85uk2niaqj31900u0e81.jpg')
+    }
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#黑苹果" title="黑苹果">黑苹果</a>
+                        
+                          <a class="tag" href="/tags/#学习笔记" title="学习笔记">学习笔记</a>
+                        
+                          <a class="tag" href="/tags/#OS" title="OS">OS</a>
+                        
+                    </div>
+                    <h1>我也吃上黑苹果了！</h1>
+                    <h2 class="subheading">我花了一周，等了俩快递。</h2>
+                    <span class="meta">
+                        Posted by CoSam on
+                        2019-10-21
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p>好久没有写博客了，最近刚装了黑苹果，想要记录一下，以便之后忘记了。然后我现在在用的是讯飞语音的语音输入，像尝试一下用这样子的方式来写博客，应该会轻松一些。<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g85x37viczj30rt0asabv.jpg" alt><br>具体来说一下。装黑苹果嘛，我之前是一个Window系统。但是因为确实用不惯Windows系统，还有我这个2k的屏幕，Windows系统来说，本来颗粒度就大，看得我眼睛非常的吃力。所以，又有一些额外的时间就着手开始把黑苹果做起来。</p>
+<h2 id="开始坑"><a href="#开始坑" class="headerlink" title="开始坑"></a>开始坑</h2><h3 id="硬件坑"><a href="#硬件坑" class="headerlink" title="硬件坑"></a>硬件坑</h3><p>说实话，我觉得黑苹果对于台式机的硬件来说要求还比较高。我刚开始找黑苹果，就是看到了淘宝上有很多商家。5块钱，然后就是远程包装系统。我就和一些商家聊了聊，把我现在的配置和他们说了说。有几个点。</p>
+<p>第一，显卡。我之前是一张英伟达，rtx1060的卡。很明显，就是n卡不能用于苹果系统。然后有商家推荐用蓝宝石rx580是比较理想的，但是rx580必须要用可以超频到 2304sp 的。<br>第二，网卡。因为我之前的本子是，华硕B360，然后会觉得，那张板子上的网卡是板载的。是黑苹果的网卡一般都是。有戴尔拆机，然后拿出来的小的单独的网卡。所以我在和一家淘宝店咨询的时候，描述了我的配置，然后，其实我当时主要的问题是说b360能不能够装黑苹果。然后他说他手上有一块 B365m-itx 的主板，说他已经调好了完美适配黑苹果，10.14。然后那个老板应该是一个非常极客的人，因为他听说我手上有B360之后想要和我交换，来研究研究B360能不能装黑苹果。在我写稿的现在，他好像还在研究，因为我那张卡的BIOS版本非常的新。所以它在一些刷版本上面比较麻烦。</p>
+<p>第三。硬盘。我之前是一张惠普的250G的 m.2. 固态硬盘。然后我在咨询淘宝店家的时候（其实我基本上硬件的消息都是从淘宝店家来的）然后看到有一家价格非常高的，要150块钱帮你装苹果单系统，180块钱装苹果和Windows双系统。因为我已经有一点想放弃，我不想自己搞了，就和他聊了聊。感觉找一家贵的会靠谱一些，但现在想来估计就是他们的策略吧，觉得想用苹果又省钱的人，应该会省下不少的钱，所以他可以卖贵一些。但是不管怎么样，我问他的时候他告诉我我的惠普的盘是没有办法写苹果系统的，因为读写速度太慢了，他推荐的是三星。正好我那张250个g的卡，比较的小，所以我单独买了一张三星的500G固态。装上了果然能感觉到的读写速度是要快很多。</p>
+<p>那我装上之后再来找他，告诉我他装的系统不能够休眠，不能用 iMessage 和 iCloud… 这没法忍的，因为本人是一个深度的苹果用户，我日常都在用，没有办法不用。他给我的解释是说，黑苹果就不是白苹果，要买苹果就得去买白的。现在想来，我就是因为他这句话让我感觉他可能就是因为想要坑装黑苹果人占便宜的这个心理，所以他把他的定价定的很高，而他实际的服务是达不到的，所以说，在选择淘宝装机这条路装黑苹果的时候应该要仔细甄别一下，其实很多商家会免费的和你聊出很多信息，希望你去在他们家下单，这就是淘宝的好，让销售能够拉平了和你，聊你不知道的东西。</p>
+<h2 id="为什么黑苹果"><a href="#为什么黑苹果" class="headerlink" title="为什么黑苹果"></a>为什么黑苹果</h2><p>然后我来说一下，刚才没有提到的，为什么我想要装黑苹果以及我怎么样装上黑苹果的。首先，我本来就是学这个的，之前看到过同学有用一个游戏本翻开，我靠，和我的一样，我就有点惊艳到了。然后之前有一阵想要买一个MAC mini，但是发现价格性太高价比太低了。后来看YouTube上面有一些讲怎么样装黑苹果的视频，我发现这个装机资源应该是非常丰富的，有专门的网站从硬件的组装到软件的版本。软件根据适配不同的主板，不同的显卡，不同的网卡声卡之类，个性化配置都有对应的黑苹果的方案。所以其实最后发现装黑苹果是一个有比较完善资源的系统，就像那我一定也能找到一条能够比较完善的，装出来比较完整的系统。这也打消了我最开始不想装黑苹果的顾虑，因为我怕有一些功能被阉割掉了。<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g85x48s8uzj30qg0oi0ux.jpg" alt></p>
+<h2 id="黑苹果技术"><a href="#黑苹果技术" class="headerlink" title="黑苹果技术"></a>黑苹果技术</h2><p>讲完硬件应该就比较清楚，其实很多都是</p>
+<p>讲完硬件应该就比较清楚了，因为很多都是所谓的硬件和软件配合不好，才出现了很多问题。网卡的驱动，声卡的驱动找不到之类的，而这种情况更多是出现在笔记本电脑上，或者说我们可以在组硬件的时候就去避免调用一些能够免驱的硬件，比如说我用到的，这款网卡A1560，以及在主板上面集成比较好的声卡。<a href="https://blog.daliansky.net/macOS-Catalina-10.15-19A583-Release-version-with-Clover-5093-original-image-Double-EFI-Version.html" target="_blank" rel="noopener">黑果小兵的部落格</a>是一个比较好的黑苹果博客。</p>
+
+
+                <hr>
+
+                
+
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2019/12/08/2019120801/" data-toggle="tooltip" data-placement="top" title="Gitlab 升级&迁移之路">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2019/04/22/real-man-libary/" data-toggle="tooltip" data-placement="top" title="真人图书馆">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                
+
+                
+
+            </div>
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#黑苹果" title="黑苹果">黑苹果</a>
+                        
+                          <a class="tag" href="/tags/#学习笔记" title="学习笔记">学习笔记</a>
+                        
+                          <a class="tag" href="/tags/#OS" title="OS">OS</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="http://blog.kaijun.rocks" target="_blank">Kaijun&#39;s Blog</a></li>
+                    
+                        <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
+                    
+                        <li><a href="#" target="_blank">Foo</a></li>
+                    
+                        <li><a href="#" target="_blank">Bar</a></li>
+                    
+                        <li><a href="#" target="_blank">Example Friends</a></li>
+                    
+                        <li><a href="#" target="_blank">It helps SEO</a></li>
+                    
+                </ul>
+                
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/Chen_Samiue">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/madsam">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="http://weibo.com/cosamuel">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/CooSamuel">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 芊杉 2019
+                    | 蜀ICP备17028198号
+                    <br>
+                    <span style="display: inline-block; margin: 0 5px;">
+                    <!--    <i class="fa fa-heart"></i> -->
+                        <i class="fa fa-space-shuttle"></i>
+                    </span>
+                    Theme by <a href="http://huangxuan.me">Hux</a>
+
+
+                    </p>
+                    <!-- |
+                    Ported by <a href="http://blog.kaijun.rocks">Kaijun</a>
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=kaijun&repo=hexo-theme-huxblog&type=star&count=true" >
+                    </iframe>
+                 -->
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://cosamuel.tech/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="https://cosamuel.tech/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
